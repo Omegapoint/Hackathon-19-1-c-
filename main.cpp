@@ -13,13 +13,19 @@ int main() {
 	int round = 0;
 	string input;
 	while (gameState.timeLeft > 0) {
-		printf("Round %d \n", round);
+		printf("\n\n--------------------\nRound %d \n", round);
 		gameState.printCurrentState();
 
+		printf("Eat [Y/N] ");
 		cin >> input;
-		cout << input;
+		if (input == "Y" || input == "y" || input == "yes" || input == "yas") {
+			printf("Eating food \n");
+		}
+		else {
+			printf("Resting \n");
+		}
 
-		gameState.timeLeft -= 1;
+		gameState.timeLeft -= 2;
 		round++;
 	}
 
