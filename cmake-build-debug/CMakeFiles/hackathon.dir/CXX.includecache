@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tobiasaxelsson/Documents/hackathon/buffeetable.h
+vector
+-
+iostream
+-
+list
+-
+
+/Users/tobiasaxelsson/Documents/hackathon/dish.h
+
+/Users/tobiasaxelsson/Documents/hackathon/gamestate.h
+iostream
+-
+dish.h
+/Users/tobiasaxelsson/Documents/hackathon/dish.h
+stdio.h
+-
+
+/Users/tobiasaxelsson/Documents/hackathon/main.cpp
+gamestate.h
+/Users/tobiasaxelsson/Documents/hackathon/gamestate.h
+buffeetable.h
+/Users/tobiasaxelsson/Documents/hackathon/buffeetable.h
+stdio.h
+-
+

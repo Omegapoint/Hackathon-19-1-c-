@@ -7,7 +7,7 @@ using namespace std;
 class BuffeeTable {
 public:
 	
-	vector<Dish> dishes = {};
+	vector<Dish> dishes;
 
 	BuffeeTable(int dishesAmount) {
 		for (int i = 0; i < dishesAmount; i++) {
