@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tobiasaxelsson/Documents/hackathon/BuffeeLoop.cpp">
+			<Option target="hackathon"/>
+		</Unit>
+		<Unit filename="/Users/tobiasaxelsson/Documents/hackathon/BuffeeLoop.h">
+			<Option target="hackathon"/>
+		</Unit>
 		<Unit filename="/Users/tobiasaxelsson/Documents/hackathon/buffeetable.h">
 			<Option target="hackathon"/>
 		</Unit>

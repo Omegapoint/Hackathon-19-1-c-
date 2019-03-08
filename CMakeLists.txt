@@ -9,4 +9,4 @@ add_executable(hackathon
         buffeetable.h
         dish.h
         gamestate.h
-        main.cpp)
+        main.cpp BuffeeLoop.cpp BuffeeLoop.h)

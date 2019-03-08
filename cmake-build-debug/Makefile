@@ -123,6 +123,33 @@ hackathon/fast:
 	$(MAKE) -f CMakeFiles/hackathon.dir/build.make CMakeFiles/hackathon.dir/build
 .PHONY : hackathon/fast
 
+BuffeeLoop.o: BuffeeLoop.cpp.o
+
+.PHONY : BuffeeLoop.o
+
+# target to build an object file
+BuffeeLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/hackathon.dir/build.make CMakeFiles/hackathon.dir/BuffeeLoop.cpp.o
+.PHONY : BuffeeLoop.cpp.o
+
+BuffeeLoop.i: BuffeeLoop.cpp.i
+
+.PHONY : BuffeeLoop.i
+
+# target to preprocess a source file
+BuffeeLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/hackathon.dir/build.make CMakeFiles/hackathon.dir/BuffeeLoop.cpp.i
+.PHONY : BuffeeLoop.cpp.i
+
+BuffeeLoop.s: BuffeeLoop.cpp.s
+
+.PHONY : BuffeeLoop.s
+
+# target to generate assembly for a file
+BuffeeLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/hackathon.dir/build.make CMakeFiles/hackathon.dir/BuffeeLoop.cpp.s
+.PHONY : BuffeeLoop.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... hackathon"
+	@echo "... BuffeeLoop.o"
+	@echo "... BuffeeLoop.i"
+	@echo "... BuffeeLoop.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

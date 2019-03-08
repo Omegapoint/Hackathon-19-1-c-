@@ -9,9 +9,10 @@ public:
 	
 	vector<Dish> dishes;
 
+
 	BuffeeTable(int dishesAmount) {
 		for (int i = 0; i < dishesAmount; i++) {
-			dishes.push_back(Dish(i));
+			dishes.push_back(Dish(i, "dish " + to_string(i)));
 		}
 	}
 
@@ -21,5 +22,9 @@ public:
 			cout << "Item";
 			cout << dishes.at(i).value;
 		}
+	}
+
+	void serveBuffee() {
+
 	}
 };
