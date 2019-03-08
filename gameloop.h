@@ -8,6 +8,7 @@
 class GameLoop {
 
 public:
+    int REST_FILLINGNESS = 2;
 
     int fullness = 0;
     int profit = -20;
@@ -30,6 +31,7 @@ public:
                 runBuffeeLoop();
             } else {
                 printf("Resting \n");
+                player.rest(REST_FILLINGNESS);
             }
             timeLeft -= 2;
             round++;
