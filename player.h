@@ -13,11 +13,7 @@ public:
 		fullness = fullnessInput;
 	}
 
-    void printHunger() {
-        std::cout << fullness;
-    }
-
-	void eat(Dish dish) {
+    void eat(Dish dish) {
 		fullness += dish.fillingness;
 		profit += dish.value;
 	}
