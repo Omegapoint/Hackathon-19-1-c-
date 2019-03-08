@@ -12,7 +12,8 @@ public:
     }
 
 	void eat(Dish dish) {
-
+		fullnes += dish.fillingness;
+		profit += dish.value;
 	}
 
 	bool isFull() {
