@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/Users/tobiasaxelsson/Documents/hackathon/GameLoop.cpp
+GameLoop.h
+/Users/tobiasaxelsson/Documents/hackathon/GameLoop.h
+
+/Users/tobiasaxelsson/Documents/hackathon/GameLoop.h
+gamestate.h
+/Users/tobiasaxelsson/Documents/hackathon/gamestate.h
+buffeetable.h
+/Users/tobiasaxelsson/Documents/hackathon/buffeetable.h
+GameLoop.h
+/Users/tobiasaxelsson/Documents/hackathon/GameLoop.h
+stdio.h
+-
+
 /Users/tobiasaxelsson/Documents/hackathon/buffeetable.h
 vector
 -
@@ -31,6 +45,8 @@ gamestate.h
 /Users/tobiasaxelsson/Documents/hackathon/gamestate.h
 buffeetable.h
 /Users/tobiasaxelsson/Documents/hackathon/buffeetable.h
+GameLoop.h
+/Users/tobiasaxelsson/Documents/hackathon/GameLoop.h
 stdio.h
 -
 
