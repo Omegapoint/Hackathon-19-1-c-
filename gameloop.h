@@ -1,7 +1,7 @@
 //
 // Created by Tobias Axelsson on 2019-03-08.
 //
-#include "gamestate.h"
+#include "player.h"
 #include "buffeetable.h"
 #include <stdio.h>
 
@@ -12,16 +12,16 @@ public:
     int fullness = 0;
     int profit = -20;
     int timeLeft = 10;
-    GameState gameState = GameState(timeLeft, profit, fullness);
+    Player player = Player(profit, fullness);
     BuffeeTable table = BuffeeTable(5);
 
     void start() {
 
         int round = 0;
         string input;
-        while (gameState.timeLeft > 0) {
+        while (timeLeft > 0) {
             printf("\n\n--------------------\nRound %d \n", round);
-            gameState.printCurrentState();
+            player.printCurrentState();
 
             printf("Eat [Y/N] ");
             cin >> input;
@@ -31,7 +31,7 @@ public:
             } else {
                 printf("Resting \n");
             }
-            gameState.timeLeft -= 2;
+            timeLeft -= 2;
             round++;
         }
     }
@@ -45,9 +45,17 @@ public:
             cin >> answer;
 
             if (answer == "Y" || answer == "y" || answer == "yes" || answer == "yas") {
-                gameState.eat(currentDish);
-                // @TODO: too full?
+                player.eat(currentDish);
+
+                if(player.isFull()) {
+                    punish(30);
+                }
             }
         }
+    }
+
+    void punish(int time) {
+        printf("I am being punished :( pls spare me senpai!");
+        timeLeft -= time;
     }
 };

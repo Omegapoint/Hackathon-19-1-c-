@@ -1,4 +1,4 @@
-#include "GameLoop.h"
+#include "gameloop.h"
 
 int main() {
 
@@ -6,7 +6,7 @@ int main() {
 
     gameLoop.start();
 
- 
+
 }
 
 

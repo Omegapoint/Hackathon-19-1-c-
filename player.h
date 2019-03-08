@@ -2,15 +2,13 @@
 #include "dish.h"
 #include <stdio.h>
 
-class GameState {
+class Player {
 public:
 
     int fullness;
 	int profit;
-	int timeLeft;
 
-	GameState(int timeLeftInput, int profitInput, int fullnessInput) {
-		timeLeft = timeLeftInput;
+	Player(int profitInput, int fullnessInput) {
 		profit = profitInput;
 		fullness = fullnessInput;
 	}
@@ -29,6 +27,10 @@ public:
 	}
 
 	void printCurrentState() {
-		printf("Time left: %d, fullness: %d, profit: %d\n", timeLeft, fullness, profit);
+		printf("Fullness: %d, profit: %d\n", fullness, profit);
+	}
+
+	void rest(int fillingness) {
+	    fullness -= fillingness;
 	}
 };
