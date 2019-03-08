@@ -5,3 +5,4 @@
 .vs
 .vscode
 cmake-build-debug/
+.name
