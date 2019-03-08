@@ -4,3 +4,4 @@
 .idea/vcs.xml
 .vs
 .vscode
+cmake-build-debug/
