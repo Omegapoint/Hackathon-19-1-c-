@@ -6,9 +6,10 @@ int main() {
 
 	player.fullness = 2;
 
-	player.printHunger();
+	//player.printHunger();
+	BuffeeTable tb = BuffeeTable(5);
+	tb.print();
 
-	BuffeeTable table = new BuffeeTable(10);
-	table.print();
+
 
 }
