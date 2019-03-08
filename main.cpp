@@ -2,9 +2,9 @@
 #include "buffeetable.h"
 
 int main() {
-	Person player;
+	Person person;
 
-	player.fullness = 2;
+	person.fullness = 2;
 
 	//player.printHunger();
 	BuffeeTable tb = BuffeeTable(5);
