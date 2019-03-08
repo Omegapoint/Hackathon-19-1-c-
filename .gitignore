@@ -1,2 +1,6 @@
+*.out
+*.xml
+*.iml
+.idea/vcs.xml
 .vs
 .vscode
