@@ -1,7 +1,7 @@
-#include "player.h"
+#include "person.h"
 
 int main() {
-	Player player;
+	Person player;
 
 	player.fullness = 2;
 

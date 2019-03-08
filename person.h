@@ -1,7 +1,7 @@
 #include <iostream>
 #include "dish.h"
 
-class Player {
+class Person {
 public:
 
     int fullness;
