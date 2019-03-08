@@ -51,9 +51,9 @@ public:
     }
 
     void runBuffeeLoop() {
-        for (int i = 0; i < table.dishes.size(); i++) {
+        for (unsigned int i = 0; i < table.dishes.size(); i++) {
             Dish currentDish = table.dishes.at(i);
-            printf("Do you want to eat %s \n", table.dishes.at(i).name.c_str());
+            printf("Do you want to eat %s \n", currentDish.name.c_str());
 
             string answer;
             cin >> answer;
