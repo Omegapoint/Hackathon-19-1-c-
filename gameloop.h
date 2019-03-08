@@ -9,11 +9,11 @@ class GameLoop {
 
 public:
     int REST_FILLINGNESS = 2;
+    int STARTING_FULLNESS = 0;
+    int STARTING_PROFIT = -20;
 
-    int fullness = 0;
-    int profit = -20;
     int timeLeft = 10;
-    Player player = Player(profit, fullness);
+    Player player = Player(STARTING_PROFIT, STARTING_FULLNESS);
     BuffeeTable table = BuffeeTable(5);
 
     void start() {
@@ -35,6 +35,18 @@ public:
             }
             timeLeft -= 2;
             round++;
+        }
+
+        printResult();
+
+    }
+
+    void printResult() {
+        printf("\n\n\n--------------------\nGAME ENDED\nTotal profit: %d\n", player.profit);
+        if (player.profit > 0) {
+            printf("Victory! The restaurant lost money on your visit!");
+        } else {
+            printf("Failure! You did not eat enough!");
         }
     }
 
