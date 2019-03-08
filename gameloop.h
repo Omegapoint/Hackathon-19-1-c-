@@ -10,7 +10,7 @@ class GameLoop {
 public:
     int REST_FILLINGNESS = 2;
     int STARTING_FULLNESS = 0;
-    int STARTING_PROFIT = -20;
+    int STARTING_PROFIT = -40;
 
     int timeLeft = 10;
     Player player = Player(STARTING_PROFIT, STARTING_FULLNESS);

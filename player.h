@@ -23,7 +23,7 @@ public:
 	}
 
 	void printCurrentState() {
-		printf("Fullness: %d, startingProfit: %d\n", fullness, profit);
+		printf("Fullness: %d, profit: %d\n", fullness, profit);
 	}
 
 	void rest(int fillingness) {
