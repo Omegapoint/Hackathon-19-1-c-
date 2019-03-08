@@ -12,18 +12,11 @@ public:
 
     DishFactory() {
         //              Value - fillingness
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(5, 8, "Egg noodles with wok fried in palm oil");
-        dishes.emplace_back(3, 10, "Rice with soy");
-        dishes.emplace_back(10, 10, "Peanut sauce");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
-        dishes.emplace_back(1, 0, "Koriander");
+      //  dishes.emplace_back(1, 0, "Koriander");
+     //   dishes.emplace_back(5, 8, "Egg noodles with wok fried in palm oil");
+  //      dishes.emplace_back(3, 10, "Rice with soy");
+    //    dishes.emplace_back(10, 10, "Peanut sauce");
+
     }
 
     Dish randomDish(int minFillingness, int maxFillingness, int minValue, int maxValue) {

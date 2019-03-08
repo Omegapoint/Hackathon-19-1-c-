@@ -12,10 +12,10 @@ public:
 	explicit BuffeeTable(int dishesAmount) {
 		//for (int i = 0; i < dishesAmount; i++) {
 			//dishes.emplace_back(i, i, "dish " + to_string(i));
-        dishes.emplace_back(1, 1, "Koriander");
-        dishes.emplace_back(5, 18, "Egg noodles with wok fried in palm oil");
-        dishes.emplace_back(3, 20, "Rice with soy");
-        dishes.emplace_back(10, 20, "Peanut sauce");
+        dishes.push_back(Dish(1, 1, "Koriander"));
+        dishes.push_back(Dish(5, 18, "Egg noodles with wok fried in palm oil"));
+        dishes.push_back(Dish(3, 20, "Rice with soy"));
+        dishes.push_back(Dish(10, 20, "Peanut sauce"));
 		//}
 	}
 
