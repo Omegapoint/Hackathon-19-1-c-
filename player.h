@@ -1,6 +1,8 @@
 #include <iostream>
+#include "dish.h"
+
 class Player {
-    public:
+public:
 
     int fullness;
 	int profit;
@@ -9,7 +11,11 @@ class Player {
         std::cout << fullness;
     }
 
-	void eat() {
+	void eat(Dish dish) {
 
+	}
+
+	bool isFull() {
+		return fullness == 100;
 	}
 };
