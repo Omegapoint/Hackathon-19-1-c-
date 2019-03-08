@@ -6,6 +6,6 @@ public:
 
 	Dish(int val) {
 		value = val;
-		
+		fillingness = val;
 	}
 };
