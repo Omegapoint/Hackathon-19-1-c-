@@ -32,5 +32,8 @@ public:
 
 	void rest(int fillingness) {
 	    fullness -= fillingness;
+	    if (fullness < 0) {
+	    	fullness = 0;
+	    }
 	}
 };
