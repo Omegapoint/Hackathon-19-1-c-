@@ -27,7 +27,7 @@ public:
             cin >> input;
             if (input == "Y" || input == "y" || input == "yes" || input == "yas") {
                 printf("Eating food \n");
-                runBuffeLoop();
+                runBuffeeLoop();
             } else {
                 printf("Resting \n");
             }
@@ -36,7 +36,7 @@ public:
         }
     }
 
-    void runBuffeLoop() {
+    void runBuffeeLoop() {
         for (int i = 0; i < table.dishes.size(); i++) {
             Dish currentDish = table.dishes.at(i);
             printf("Do you want to eat %s \n", table.dishes.at(i).name.c_str());
