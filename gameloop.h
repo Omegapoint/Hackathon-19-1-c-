@@ -21,7 +21,7 @@ public:
         int round = 0;
         string input;
         while (timeLeft > 0) {
-            printf("\n\n--------------------\nRound %d \n", round);
+            printf("\n\n--------------------\nRound %d, time left %d\n", round, timeLeft);
             player.printCurrentState();
 
             printf("Eat [Y/N] ");
