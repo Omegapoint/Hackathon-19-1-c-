@@ -1,14 +1,15 @@
 #include <iostream>
 #include "dish.h"
+#include <stdio.h>
 
-class Person {
+class GameState {
 public:
 
     int fullness;
 	int profit;
 	int timeLeft;
 
-	Person(int timeLeftInput, int profitInput, int fullnessInput) {
+	GameState(int timeLeftInput, int profitInput, int fullnessInput) {
 		timeLeft = timeLeftInput;
 		profit = profitInput;
 		fullness = fullnessInput;
@@ -25,5 +26,9 @@ public:
 
 	bool isFull() {
 		return fullness == 100;
+	}
+
+	void printCurrentState() {
+		printf("Time left: %d, fullness: %d, profit: %d", timeLeft, fullness, profit);
 	}
 };
