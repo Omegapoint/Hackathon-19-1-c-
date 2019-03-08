@@ -12,7 +12,7 @@ public:
     }
 
 	void eat(Dish dish) {
-		fullnes += dish.fillingness;
+		fullness += dish.fillingness;
 		profit += dish.value;
 	}
 
