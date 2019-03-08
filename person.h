@@ -6,6 +6,13 @@ public:
 
     int fullness;
 	int profit;
+	int timeLeft;
+
+	Person(int timeLeftInput, int profitInput, int fullnessInput) {
+		timeLeft = timeLeftInput;
+		profit = profitInput;
+		fullness = fullnessInput;
+	}
 
     void printHunger() {
         std::cout << fullness;
