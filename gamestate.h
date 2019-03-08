@@ -29,6 +29,6 @@ public:
 	}
 
 	void printCurrentState() {
-		printf("Time left: %d, fullness: %d, profit: %d", timeLeft, fullness, profit);
+		printf("Time left: %d, fullness: %d %, profit: %d\n", timeLeft, fullness, profit);
 	}
 };
